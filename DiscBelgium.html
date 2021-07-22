@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<title>Discover Belgium</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<body id="myPage">
+
+<style>
+  #team{
+    background-color: #F08080;
+  }
+
+  #work{
+    background-color: #F08080;
+  }
+
+  #pricing{
+    background-color: #F08080;
+  }
+  </style>
+
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a href="#" class="w3-bar-item w3-button w3-amber"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Food</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Visit</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+
+  </div>
+ </div>
+
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<div class="w3-display-container w3-animate-opacity">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style = "height: 50%">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+  
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://globalgrasshopper.com/wp-content/uploads/2018/03/Brugge-at-dusk2.jpg" alt="Riverwalk" height:50% width = 100%  >
+      </div>
+  
+      <div class="item">
+        <img src="https://www.planetware.com/wpimages/2019/12/belgium-best-cities-to-visit-antwerp.jpg" alt="Great Place" height:50% width = 100%  >
+      </div>
+  
+      <div class="item">
+        <img src="https://i.pinimg.com/originals/34/a6/16/34a616cc467804f8a38f066b6b123357.jpg" alt="Atomium" height:50% width = 100%  >
+      </div>
+
+      <div class="item">
+        <img src="https://digitourist.files.wordpress.com/2016/02/cinquantenaire.jpg?w=920&h=666&crop=1" alt="Palace" height:50% width = 100%  >
+      </div>
+
+      <div class="item">
+        <img src="https://www.planetware.com/photos-large/B/belgium-antwerp-grand-place.jpg" alt="EU" height:50% width = 100%  >
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="w3-container w3-display-left w3-margin-top ">  
+    <button onclick="document.location='#team'"class ="w3-button w3-xxlarge w3-theme w3-hover-amber" title="Explore Belgium">Explore Belgium</button>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>About Belgium</h2>
+<p>The Land of Surrealism - Belgique, as the French call it</p>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:black;">
+    <b>Location</b>
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:#FFBF00;">
+    <b>History</b>
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:red;">
+    <b>Government</b>
+  </div>
+</div>
+
+
+<div id="b1" class="containerTab" style="display:none;background:black">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img src="https://www.worldatlas.com/r/w1200/upload/91/ac/60/be-01.jpg" alt="Map" style="width:30%" class="w3-square w3-hover-opacity">
+  
+  <h3>Location</h3>
+  <h4>Belgium is bordered by France, Luxembourgh, the Netherlands, and Germany.</h4>
+  <h4>On 25 August 1830, the Belgian revolution took place in Brussels, which led to the country's independence. The first king of the Belgians, Leopold I, was crowned in 1831 and the city was chosen capital of Belgium.</h4></b>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background: #FFBF00">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h3>History</h3>
+    <img src="https://i.ytimg.com/vi/MdQgLMz539M/maxresdefault.jpg" alt="Past" style="width:60%" class="w3-square w3-hover-opacity">
+  <h4>
+    <b>
+    <li>1830 - Declaration of independence from Netherlands.</li><br>
+      <li>1930 - Flanders and Wallonia legally become unilingual regions.</li><br>
+      <li>1950 - Belgian electorate votes for Leopold's return, but after strikes and riots Leopold appoints eldest son, Prince Baudouin, to temporarily rule in his place.</li><br>
+      <li>1960 - Belgian government grants independence to the Congo - now Democratic Republic of Congo.</li><br>
+      <li>2016 March - Islamic State suicide bombers attack Brussels' Zaventem airport and Maalbeek metro station four days after the capture in the city of Salah Abdeslam, one of the alleged organisers of the November attacks in Paris. Thirty-five people are killed and more than 300 injured.</li><br>
+    </b>
+    </div>
+</h4>
+
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/State_Coat_of_Arms_of_Belgium.svg/1200px-State_Coat_of_Arms_of_Belgium.svg.png" alt="Government" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Government</h3>
+    <h4>Between 1970 and 1993, the country evolved into a more efficient federal structure. This occurred through six state reforms (in 1970, 1980, 1988-89, 1993, 2001 and 2012-2014). As a result, the first Article of the Belgian constitution reads today: 'Belgium is a federal state, composed of communities and regions'.</h4>
+    <h4>The current King of Belgium is King Philippe and the Prime Minister is Alexander De Croo.</h4>
+
+</div>
+
+
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+
+
+
+<div class="w3-row-padding w3-padding-64" id="work">
+
+<div class="w3-quarter">
+<h2>Tastes of Belgium</h2>
+<p>Neighbouring northern France, the border to Belgium is just a pebble skip away for a day trip or relaxing weekend, and to taste the different regional foods that this country offers.
+
+  Wallonian cuisine, from the French-speaking region in the south, has a focus on fresh ingredients and rich sauces, while Flemish cuisine is a little simpler, with more similarities to the food produced in the Netherlands. Rich stews and delicate meats served in Belgian cuisine are just some of the culinary delights you can sample on your Belgium holiday. </p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/2020_belgian-style-waffles_16700_760x580.jpg?ext=.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>Belgian Waffle</h3>
+  <h5>Originally showcased in 1958 at Expo 58 in Brussels, Belgian waffles were introduced to North America by a Belgian named Walter Cleyman </h5>
+  <p>Considered one of the best breakfast delicacies worldwide and a sure thing to try during your Belgium endeavor</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDlQB_l6TOkjO6yVbV1RAYIsPu_9k90qnaA&usqp=CAU" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Manneken Pis</h3>
+  <h5>Manneken Pis is the famous bronze statue next to the Grand Place square in Brussels.</h5>
+  <p>Most popular site in Brussels is a two foot, bronze statue of a naked boy urinating in a fountain</p>
+  <p>The most famous Manneken Pis is disguised as a treat and has chosen to do so in delicious Leonidas milk chocolate with 100% pure cocoa butter.</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://blog.eurail.com/wp-content/uploads/2016/05/Belgian-fries-in-Brussels.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>Belgian Fries</h3>
+  <h5>Considered the National Food of Belgium</h5>
+  <p>Belgian frites are almost always served with a sauce – be it the standard favourites of ketchup and mustard, or a more interesting concoction like andalouse, samurai and joppieaus – but the most traditional topping for Belgians is mayonnaise.</p>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<hr>
+
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+  
+    <h2>Visit of a Lifetime</h2>
+    <p>3 of the prettiest cities to admire during your stay</p><br>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Brussels</p>
+        </li>
+        <li class="w3-padding-16"><img src="https://blog.radissonblu.com/wp-content/uploads/2016/08/Brussels-Grand-Place-rainbow.jpg" alt="Lights" style="width:100%">
+        <li class="w3-padding-16">Voted many times round as one of the most beautiful squares in Europe, it is definitely a reason to visit the EU capital. Surrounded by exquisite buildings, it’s listed as a UNESCO World Heritage Site and lined with restaurants and lively cafes. The square is decorated with an impressive flower carpet every two years in August, so if you happen to be in town during that period don’t miss it!</li>
+        <li class="w3-padding-16">Brussels is the capital of Art Nouveau. This is where architects Horta and Hankar designed the first Art Nouveau buildings in the world: Hotel Tassel and Maison Hankar. Besides visiting the Horta Museum, you can also admire many beautiful Art Nouveau buildings like the Maison Cauchie and MIM just walking around the city. </li>
+        <li class="w3-padding-16">Brussels is a very lively city. People come together to enjoy its great outdoor festivals throughout the year. Some of the ones tourists love -  Jazz Marathon, Fête de la Musique, Eat! Brussels, Royal Park Music Festival, Belgian Beer Weekend, Comic Strip Festival.</li>
+        <li class="w3-padding-16">From The Smurfs to Tintin, it’s astounding just how many cartoons were created in Brussels. Walk through its streets and you’ll see colourful comic-book characters looking out from over 40 different frescoes. It’s safe to say Bruxellois are masters of the ninth art.
+          <span class="w3-opacity"></span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <form id = "bru" action="https://www.tripadvisor.com/Hotels-g188644-Brussels-Hotels.html">
+            <input type="submit" value="Book a Trip to Brussels" />
+        </form>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">Antwerp</p>
+        </li>
+        <li class="w3-padding-16"><img src="https://www.esl-languages.com/sites/default/files/styles/image_gallery/public/city/gallery/esl-antwerp-language-stay-hero.jpg?itok=uOUVh1DU" alt="Lights" style="width:100%;min-height:250px;max-height:600px;"></li>
+        <li class="w3-padding-16">Looking at a train station may not be one of the best things to do in many cities but in Antwerp, it is an absolute must. The Gothic architecture of the building’s impressive exterior will take your breath away and the main hall is equally splendid. The station is one of the city’s most treasured landmarks and has been rated as one of the world’s top five most beautiful train stations. </li>
+        <li class="w3-padding-16">Antwerp Zoo was founded in 1843 and makes a great day out when you are tired of looking at museums and architecture. The zoo may be one of the oldest in the world but the facilities are modern and world class with state of the art enclosures and breeding programmes.</li>
+        <li class="w3-padding-16">The tallest cathedral in the Low Countries is one that can be appreciated both from outside and inside. It took 169 years to build before being completed in the year 1521. The spire is visible from many areas of the city and rarely fails to take one’s breath away. The interior is a striking blend of Baroque decor and Ruben’s artwork.</li>
+        <li class="w3-padding-16">Chocolate Nation is the largest Belgian Chocolate Museum in the world. This museum is the newest addition to Antwerp's tourist attractions. The very first Belgian chocolate factory opened in Antwerp in 1831. 
+          <span class="w3-opacity"></span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <form action="https://www.tripadvisor.com/Hotels-g188636-Antwerp_Antwerp_Province-Hotels.html">
+            <input type="submit" value="Book a Trip to Antwerp" />
+        </form>
+          
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Ghent</p>
+        </li>
+        <li class="w3-padding-16"><img src="https://i.pinimg.com/originals/bb/54/c3/bb54c3b081852596da66c09ce6919254.jpg" alt="Lights" style="width:100%"></li>
+        <li class="w3-padding-16">Graslei and Korenlei are two quays on the banks of Leie river and are part of the historic centre. The beautiful old buildings all around clearly gives the old world charm to the area. Both the quays are full of cafés and restaurants where you can sit for hours and soak in the view.</li>
+        <li class="w3-padding-16">Ghent is well known for its large public squares and marketplaces, chief among which is the Vrijdagmarkt (“Friday Market”), the centre of the life of the medieval city. Of Ghent’s many famous medieval monasteries, the most notable are the ruined 7th-century abbey of St. Bavo (Bavon, or Baaf) and the remains of the Cistercian abbey of Byloke, or Bijloke (1228).</li>
+        <li class="w3-padding-16">Much of the Ghent’s medieval architecture remains remarkably well preserved and restored. Cars are banned in the city center, and the cobblestone streets are filled with people walking, biking or taking the public trams. The city center of Ghent is Belgium’s largest carfree area.</li>
+        <li class="w3-padding-16"> A cruise on the canals is a good way to view Ghent’s highlights and learn about it’s history from an entertaining boat driver.  Boat tours are offered daily between April and October, and on weekends between November and March. 
+          <span class="w3-opacity"></span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <form action="https://www.tripadvisor.com/Hotels-g188666-Ghent_East_Flanders_Province-Hotels.html">
+            <input type="submit" value="Book a Trip to Ghent" />
+        </form>
+          
+        </li>
+      </ul>
+    </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>We are looking forward to your visit!</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> Grasmarkt 61,
+        1000 Brussel</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +32 2 504 03 00</p>
+      
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> <a href="mailto:info@toerismevlaanderen.be">info@toerismevlaanderen.be</a>
+      </p>
+    </div>
+    <div class="w3-col m7">
+      <div class="w3-section">  
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain"> 
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+    </form>   
+    </div>
+  </div>
+</div>
+
+<img src="https://globalgrasshopper.com/wp-content/uploads/2018/03/best-places-to-visit-in-Belgium-1000x551.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+</body>
+</html>
+
